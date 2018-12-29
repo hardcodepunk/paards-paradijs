@@ -127,6 +127,10 @@
   }
 }
 
+.row {
+  display: flex;
+}
+
 /*
  * components
  */
@@ -189,13 +193,30 @@
 }
 
 .gallery {
+  margin-bottom: 0;
   &__img {
-    display: inline-block;
-    width: 33.3333333333%;
-    &:not(first-child) {
-      margin-left: -4px;
-    }
-    margin-bottom: -4px;
+    flex-grow: 1;
+  }
+}
+
+.fullscreen-img {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 200;
+  overflow: hidden;
+  display: none;
+  &.active {
+    display: block;
+  }
+  img {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
   }
 }
 

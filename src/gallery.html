@@ -2,16 +2,13 @@
 <html lang="en">
 <head>
   <!-- Meta -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="theme-color" content="#f5eedc">
-    <meta name="Description" content="Paardrij activiteiten zoals ritten, lessen en workshops gegeven door Bettie Verschuuren en haar IJslandse paarden.">
-    <title>Paard Paradijs — Page Title</title>
-    <!-- Stylesheets -->
-    <link href="https://fonts.googleapis.com/css?family=Alegreya:400,800|Amatic+SC:400,700" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f5eedc">
+  <meta name="Description" content="Paardrij activiteiten zoals ritten, lessen en workshops gegeven door Bettie Verschuuren en haar IJslandse paarden.">
+  <title>Paard Paradijs — Gallerij</title>
   <!-- Stylesheets -->
-  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe.min.css'>
-  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/default-skin/default-skin.min.css'>
+  <link href="https://fonts.googleapis.com/css?family=Alegreya:400,800|Amatic+SC:400,700" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body class="body">
@@ -34,19 +31,21 @@
   </div>
 </header>
 <section class="section gallery">
-  <img class="gallery__img" src="assets/img/placeholder.jpg"/>
-  <img class="gallery__img" src="assets/img/placeholder.jpg"/>
-  <img class="gallery__img" src="assets/img/placeholder.jpg"/>
-  <img class="gallery__img" src="assets/img/placeholder.jpg"/>
-  <img class="gallery__img" src="assets/img/placeholder.jpg"/>
-  <img class="gallery__img" src="assets/img/placeholder.jpg"/>
-  <img class="gallery__img" src="assets/img/placeholder.jpg"/>
-  <img class="gallery__img" src="assets/img/placeholder.jpg"/>
-  <img class="gallery__img" src="assets/img/placeholder.jpg"/>
-  <img class="gallery__img" src="assets/img/placeholder.jpg"/>
-  <img class="gallery__img" src="assets/img/placeholder.jpg"/>
-  <img class="gallery__img" src="assets/img/placeholder.jpg"/>
+  <div class="row">
+    <img class="gallery__img js-full-view" data-number="1" src="assets/img/placeholder.jpg"/>
+    <img class="gallery__img js-full-view" data-number="2" src="assets/img/placeholder.jpg"/>
+    <img class="gallery__img js-full-view" data-number="3" src="assets/img/placeholder.jpg"/>
+  </div>
 </section>
+<div id="1" class="fullscreen-img">
+  <img class="js-lazy-load" data-src="assets/img/placeholder.jpg"/>
+</div>
+<div id="2" class="fullscreen-img">
+  <img class="js-lazy-load" data-src="assets/img/placeholder.jpg"/>
+</div>
+<div id="3" class="fullscreen-img">
+  <img class="js-lazy-load" data-src="assets/img/placeholder.jpg"/>
+</div>
 <!--<footer class="footer">
   <div class="wrapper">
     <link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
@@ -66,8 +65,6 @@
   </div>
 </footer>-->
 <!-- Scripts -->
-<script src='https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe.min.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe-ui-default.min.js'></script>
 <script src="assets/js/script.js"></script>
 </body>
 </html>
