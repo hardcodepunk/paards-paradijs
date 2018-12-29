@@ -1,0 +1,37 @@
+@media only screen and (max-width: 1300px) {
+  .open-menu .header .list--center-on-mobile .menu-item {
+    line-height: 1em;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  h1, h1.title-1, h1.title-1__subtitle {
+    font-size: 70px;
+  }
+  h1.title-1__subtitle {
+    font-size: 35px;
+  }
+  p, .body-regular {
+    font-size: 1.2em;
+  }
+  .article p {
+    margin: 0.5em 0 1em;
+  }
+}
+
+@media (max-width:768px) {
+  input[type="text"], input[type="email"], textarea {
+    width: 100%;
+    max-width: 90% !important;
+    margin: 0 auto 5px !important;
+  }
+}
+
+@media only screen and (max-width: 540px) {
+  h1, h1.title-1, h1.title-1__subtitle {
+    font-size: 40px;
+  }
+  h1.title-1__subtitle {
+    font-size: 24px;
+  }
+}

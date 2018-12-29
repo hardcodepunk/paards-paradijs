@@ -1,0 +1,55 @@
+// =============================================
+// Mixin - Typography
+// =============================================
+
+@mixin title-1 {
+  margin: 0;
+  font-size: 140px;
+  font-family: 'Amatic SC', cursive;
+  color: $pottersclay;
+  line-height: 1em;
+  text-transform: uppercase;
+  text-rendering: optimizeLegibility;
+  margin-bottom: 0.4em;
+}
+
+@mixin title-2 {
+  margin: 0;
+  font-size: 110px;
+  font-family: 'Amatic SC', cursive;
+  color: $pottersclay;
+  line-height: 1em;
+  text-transform: uppercase;
+  text-rendering: optimizeLegibility;
+  margin-bottom: 0.4em;
+}
+
+@mixin title-3 {
+  margin: 0;
+  font-size: 80px;
+  font-family: 'Amatic SC', cursive;
+  color: $pottersclay;
+  line-height: 1em;
+  text-transform: uppercase;
+  text-rendering: optimizeLegibility;
+  margin: 0.2em 0 0.4em;
+}
+
+@mixin title-4 {
+  margin: 0;
+  margin-bottom: 0.7em;
+  font-size: 1.5em;
+  font-weight: 200;
+  line-height: 1.2em;
+  text-transform: uppercase;
+  text-rendering: optimizeLegibility;
+}
+
+@mixin title-5 {
+  margin: 0;
+  font-size: 1.4em;
+  font-weight: 200;
+  line-height: 1.75em;
+  text-rendering: optimizeLegibility;
+  margin-bottom: 0.4em;
+}
