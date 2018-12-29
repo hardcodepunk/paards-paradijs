@@ -6,16 +6,16 @@ html, body {
   height: 100%;
 }
 
- /* ============================================ *
-  * Typography
-  * ============================================ */
+/* ============================================ *
+* Typography
+* ============================================ */
 
-  body {
-    font-family: 'Alegreya', serif;
-    font-size: 16px;
-    background: $orchidwhite;
-    color: $onyx;
-  }
+body {
+  font-family: 'Alegreya', serif;
+  font-size: 16px;
+  background: $orchidwhite;
+  color: $onyx;
+}
 
 h1, .title-1 { @include title-1; }
 h2, .title-2 { @include title-2; }
