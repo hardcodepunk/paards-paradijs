@@ -13,8 +13,8 @@ html, body {
 body {
   font-family: 'Alegreya', serif;
   font-size: 16px;
-  background: $pottersclay;
-  color: $orchidwhite;
+  background: $background;
+  color: $type;
 }
 
 h1, .title-1 { @include title-1; }

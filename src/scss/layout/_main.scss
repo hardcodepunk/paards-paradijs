@@ -2,6 +2,10 @@
  * lay-out
  */
 
+.body.overlay-active {
+  overflow: hidden;
+}
+
 .wrapper {
   width: 100%;
   padding: 0 5%;
@@ -12,6 +16,10 @@
 .section {
   padding-top: 140px;
   margin-bottom: 100px;
+}
+
+.gallery {
+  padding-bottom: 40px;
 }
 
 .article {
@@ -32,7 +40,7 @@
   }
   a {
     font-weight: bold;
-    color: $linkwater;
+    color: $interface;
     &:hover {
       text-decoration: underline;
     }
@@ -64,10 +72,6 @@
   transform: rotate(45deg);
 }
 
-.open-menu .header .nav__toggle .bottom, .open-menu .header .nav__toggle .top {
-  //background: #fff;
-}
-
 .menu-site-navigation-container {
   .list > .menu-item:not(:first-child) {
     margin-left: 40px;
@@ -87,7 +91,7 @@
     width: 100%;
     height: 100%;
     margin: 0;
-    background: rgba(245, 238, 220, 0.9);
+    background: rgba(134, 87, 58, 0.9);
     visibility: hidden;
     opacity: 0;
     z-index: 10;
@@ -129,6 +133,7 @@
 
 .row {
   display: flex;
+  align-items: center;
 }
 
 /*
@@ -138,7 +143,7 @@
 .header {
   width: 100%;
   padding: 20px 0;
-  background: $pottersclay;
+  background: $background;
   position: fixed;
   z-index: 100;
   .menu-site-navigation-container {
@@ -146,7 +151,7 @@
     margin-top: 15px;
     .menu-item {
       font-family: 'Amatic SC', cursive;
-      color: $linkwater;
+      color: $interface;
       font-size: 60px;
     }
   }
@@ -169,7 +174,7 @@
       width: 100%;
       height: 4px;
       margin: -2px 0 0;
-      background: $linkwater;
+      background: $interface;
       transform-origin: 50%;
       transition: all 0.2s cubic-bezier(0.455, 0.03, 0.515, 0.955);
     }
@@ -195,7 +200,9 @@
 .gallery {
   margin-bottom: 0;
   &__img {
-    flex-grow: 1;
+    flex: 1;
+    width: 100%;
+    min-width: 0;
   }
 }
 
@@ -231,19 +238,14 @@
   }
 }
 
-
-/*
- *
- */
-
 .footer label {
-  color: $linkwater;
+  color: $interface;
 }
 
 .footer .btn {
-  border: 2px solid $linkwater;
+  border: 2px solid $interface;
   background-color: transparent;
-  color: $linkwater;
+  color: $interface;
   padding: 10px 15px !important;
   font-family: 'Alegreya', serif !important;
   font-size: 1em;
@@ -252,8 +254,18 @@
 
 .footer .btn:focus,
 .footer .btn:hover {
-  background: $linkwater;
-  color: $orchidwhite;
+  background: $interface;
+  color: $background;
+}
+
+.button {
+  padding: 15px 35px;
+  background: $background;
+  @include translateX;
+  @include title-4;
+  bottom: 5%;
+  display: inline-block;
+  cursor: pointer;
 }
 
 .btn--form {
@@ -263,9 +275,9 @@
 input[type="text"], input[type="email"], textarea {
   padding: 10px 15px !important;
   font-size: 1em !important;
-  border: 2px solid $linkwater !important;
+  border: 2px solid $interface !important;
   background: transparent !important;
-  color: $linkwater !important;
+  color: $interface !important;
   border-radius: 0 !important;
   -moz-box-sizing: content-box !important;
   -webkit-box-sizing: content-box !important;
@@ -275,14 +287,14 @@ input[type="text"], input[type="email"], textarea {
 }
 
 input[type="email"]::placeholder, input[type="text"]::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-    color: $linkwater;
+    color: $interface;
     opacity: 1; /* Firefox */
 }
 
 input[type="email"]:-ms-input-placeholder, input[type="text"]::placeholder { /* Internet Explorer 10-11 */
-    color: $linkwater;
+    color: $interface;
 }
 
 input[type="email"]::-ms-input-placeholder, input[type="text"]::placeholder { /* Microsoft Edge */
-    color: $linkwater;
+    color: $interface;
 }

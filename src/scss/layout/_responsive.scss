@@ -17,6 +17,15 @@
   .article p {
     margin: 0.5em 0 1em;
   }
+  .row {
+    flex-wrap: wrap;
+  }
+  .gallery {
+    &__img {
+      flex: 0 0 100%;
+      cursor: pointer;
+    }
+  }
 }
 
 @media (max-width:768px) {
@@ -31,7 +40,10 @@
   h1, h1.title-1, h1.title-1__subtitle {
     font-size: 40px;
   }
-  h1.title-1__subtitle {
+  h1.title-1__subtitle, h4, h4.title-4, .button {
     font-size: 24px;
+  }
+  .button {
+    font-weight: normal;
   }
 }
