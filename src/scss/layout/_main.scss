@@ -2,6 +2,19 @@
  * lay-out
  */
 
+.body {
+  background: url("../img/bg.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+
+.background-overlay {
+  background: rgba(0, 0, 0, 0.4);
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+
 .body.overlay-active {
   overflow: hidden;
 }
@@ -143,7 +156,7 @@
 .header {
   width: 100%;
   padding: 20px 0;
-  background: $background;
+  //background: $background;
   position: fixed;
   z-index: 100;
   .menu-site-navigation-container {
