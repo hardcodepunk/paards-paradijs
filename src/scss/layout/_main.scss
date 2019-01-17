@@ -250,14 +250,16 @@
 
 .banner {
   width: 100%;
-  padding-top: 106px;
-  &__img {
+  padding-top: 121px;
+  &__img-container {
     width: 100%;
     padding-bottom: 33.3333%;
-    background: url("../img/placeholder--banner.jpg") no-repeat;
-    @include image_2x("../img/placeholder--banner@2x.jpg", auto, 100%);
-    background-position: center;
-    background-size: contain;
+    position: relative;
+    overflow: hidden;
+    &__img {
+      @include translateXY;
+      width: 100%;
+    }
   }
 }
 
