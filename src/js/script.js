@@ -18,3 +18,11 @@ for (var i=0; i < toggleFullview.length; i++) {
     }
   };
 };
+
+window.addEventListener('load', function() {
+  var lazyLoadImgs = document.getElementsByClassName('js-lazy-load-onload');
+  for (var i=0; i < lazyLoadImgs.length; i++) {
+    var lazyLoadImg = lazyLoadImgs[i];
+    lazyLoadImg.style.backgroundImage = "url('" + lazyLoadImg.getAttribute('data-src') + "')";
+  };
+});
