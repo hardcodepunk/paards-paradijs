@@ -25,4 +25,4 @@ window.addEventListener('load', function() {
     var lazyLoadImg = lazyLoadImgs[i];
     lazyLoadImg.style.backgroundImage = "url('" + lazyLoadImg.getAttribute('data-src') + "')";
   };
-});
+}); 

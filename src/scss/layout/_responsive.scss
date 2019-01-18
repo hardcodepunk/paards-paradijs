@@ -21,10 +21,9 @@
     flex-wrap: wrap;
   }
   .gallery {
-    &__img {
+    &__item {
       flex: 0 0 100%;
-      cursor: pointer;
-    }
+    }  
   }
 }
 
