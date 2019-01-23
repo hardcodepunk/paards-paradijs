@@ -352,13 +352,31 @@
 }
 
 .button {
-  padding: 15px 35px;
   background: $background;
-  @include translateX;
-  @include title-4;
-  bottom: 5%;
+  position: absolute;
+  right: 2%;
+  top: 5%;
   display: inline-block;
   cursor: pointer;
+  width: 32px;
+  height: 32px;
+  &:hover {
+    opacity: 1;
+  }
+  &:before, &:after {
+    position: absolute;
+    left: 15px;
+    content: '';
+    height: 33px;
+    width: 2px;
+    background-color: $interface;
+  }
+  &:before {
+    transform: rotate(45deg);
+  }
+  &:after {
+    transform: rotate(-45deg);
+  }
 }
 
 .btn--form {
